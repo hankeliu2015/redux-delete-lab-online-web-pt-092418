@@ -6,11 +6,12 @@ import Band from './Band'
 
 class BandsContainer extends Component {
   render() {
+    debugger
     return (
       <div>
         <BandInput addBand={this.props.addBand}/>
         <hr/>
-        <Band />
+        <Band name={this.props.bands}/>
       </div>
     )
   }

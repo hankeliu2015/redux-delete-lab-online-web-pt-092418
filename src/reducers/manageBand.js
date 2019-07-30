@@ -4,7 +4,7 @@ export default function manageBand(state = {
   switch (action.type) {
     case 'ADD_BAND':
       const eachBand = {
-        id: Math.random()*10000000000000000,
+        id: Math.random()*100000000000000000,
         name: action.name
       }
       return { ...state, bands: [...state.bands, eachBand] }
